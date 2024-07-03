@@ -1,6 +1,6 @@
 import sys
-from src import pose_estimation
-from src import obj_detection
+from src import pose_estimation as pest
+from src import instance_segmentation as iseg
 
 if len(sys.argv) < 2:
     print("Usage: python main.py <video_file>")
@@ -8,10 +8,10 @@ if len(sys.argv) < 2:
 
 video_file = sys.argv[1]
 
-# Perform object detection on golf club
-obj_detection.apply_obj_detection(video_file)
+# Perform instance segmentation on golf club
+iseg.apply_instance_segmentation(video_file)
 
 # Perform pose estimation on edited video
-pose_estimation.apply_pose_estimation(video_file)
+#pest.apply_pose_estimation(video_file)
 
 # Save and output final video

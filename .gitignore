@@ -3,7 +3,16 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Visual Studio Code settings
 .vscode
-model/dataset/results
+
+# Ignore dataset
 model/dataset/train
 model/dataset/valid
+model/dataset/results/**/*.jpg
+model/dataset/results/**/*.png
+model/dataset/results/**/*.csv
+model/dataset/results/**/events.out.tfevents.*
+
+# Ignore sample videos
+videos/

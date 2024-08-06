@@ -1,13 +1,11 @@
-train: ../train/images
-val: ../valid/images
-test: ../test/images
+path: ../model/dataset
+
+train: train/images
+val: valid/images
+test: test/images
 
 nc: 3
-names: ['0', '1', '3']
-
-roboflow:
-  workspace: fp-fwgwb
-  project: golf-batch-12-skjfm
-  version: 9
-  license: CC BY 4.0
-  url: https://universe.roboflow.com/fp-fwgwb/golf-batch-12-skjfm/dataset/9
+names: 
+  0: 0
+  1: 1
+  2: 3
